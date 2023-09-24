@@ -3,12 +3,12 @@
             <label for="title">Book Title: </label>
             <input type="text" v-model="title" required/>
 
-            <label for="isbn">ISBN: </label>
-            <input type="number" v-model="isbn" required/>
-
             <label for="author">Author: </label>
             <input type="text" v-model="author" required/>
             
+            <label for="isbn">ISBN: </label>
+            <input type="number" v-model="isbn" required/>
+
             <label for="quantity">Quantity: </label>
             <input type="number" v-model="quantity" required/>
 
@@ -40,7 +40,6 @@
 </template>
   
   <script setup>
-  import PopulateTable from '../components/PopulateTable.vue'
   import Button from '../components/Button.vue'
   import axios from 'axios';
   </script>
@@ -100,53 +99,5 @@
   </script>
 
   <style scoped>
-* {
-  box-sizing: border-box;
-}
-
-html.open, body.open {
-  height: 100%;
-  overflow: hidden;
-}
-
-html {
-  padding: 40px;
-  font-size: 62.5%;
-}
-
-body {
-  padding: 20px;
-  background-color: #5BB9B8;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  color: #fff;
-  font-size: 1.6rem;
-  font-family: 'Lato', sans-serif;
-}
-
-h3 {
-  text-align: center;
-  font-weight: 300;
-  clear: both;
-}
-  label,input{
-    float:left;
-    clear: both;
-  }
-  input{
-    height: 5vh;
-    border-radius: 8px;
-    border: 2px solid #5468ff;
-    padding: 1em;
-    width: 100%;
-  }
-  input:hover {
-    border: 2px solid grey;
-  }
-  #message{
-    margin: 1em;
-    margin-top: 2em;
-    color: #000000;
-    font-weight: bolder;
-  }
+@import url(../assets/views.css);
 </style>
