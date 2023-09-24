@@ -1,41 +1,39 @@
-@import './base.css';
+<template>
+    <table>
+      <thead>
+        <tr v-for="title in titles">
+          <th>{{ title }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="item in items">
+            <div v-for="attr in item && title in titles">
+                <td data-title={{ title }}>
+                    {{ attr }}
+                </td>
+            </div>
+        </tr>
+      </tbody>
+    </table>
+</template>
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: #5468ff;
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+<script setup>
+defineProps({
+  titles: {
+    type: Array,
+    required: true
+  },
+  items: {
+    type: Array,
+    required: true
   }
-}
+})
+</script>
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-}
+<style scoped>
 table {
   display: block;
-  background-color: #5468ff;
+  background-color: #2C3845;
 }
 
 tr, td, tbody, tfoot {
@@ -75,7 +73,7 @@ th {
 }
 
 thead th {
-  background-color: #fff;
+  background-color: #202932;
   color: #ff0000;
   border: 1px solid #202932;
 }
@@ -93,7 +91,6 @@ thead th {
 @media (min-width: 720px) {
   table {
     display: table;
-    margin-top: 1em;
   }
 
   tr {
@@ -123,3 +120,4 @@ thead th {
     padding: 10px;
   }
 }
+</style>
