@@ -1,29 +1,16 @@
-# vue-project
+# lib-management-frontend
+This is the frontend of the library management system that is used by the librarian to do CRUD operations on books and members as well as issue and return a book. You can interact with the frontend locally or through the live page using [this link](https://lib-management-system.onrender.com/addbook).
 
-This template should help get you started developing with Vue 3 in Vite.
+## 1. Set up the project as follows:
+Clone the repository to your local machine
+#
+Open the folder from within Visual Studio Code
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+## 2. Install the dependencies required by running the following commands:
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+## 3. Run the server file using the following command:
 npm run dev
-```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+## 4. Open the following link in your browser:
+http:localhost/5173
