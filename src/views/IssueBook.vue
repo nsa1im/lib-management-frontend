@@ -19,8 +19,8 @@
       <table>
       <thead>
         <tr>
-          <th>Member ID</th>
           <th>ISBN</th>
+          <th>Member ID</th>
           <th>Date</th>
         </tr>
       </thead>
